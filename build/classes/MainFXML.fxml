@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="660.0" prefWidth="1280.0" styleClass="big-bg" stylesheets="@admindesign.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainFXMLController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="149.0" layoutY="53.0" prefHeight="575.0" prefWidth="900.0" styleClass="white-bg" stylesheets="@admindesign.css">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Label layoutX="539.0" layoutY="141.0" text="Username" textFill="#ff0909" />
+            <TextField fx:id="tfFirstname" layoutX="539.0" layoutY="169.0" prefHeight="25.0" prefWidth="250.0" promptText="Username" />
+            <Label layoutX="541.0" layoutY="203.0" text="Password" textFill="#ff1111" />
+            <Button layoutX="606.0" layoutY="378.0" mnemonicParsing="false" onAction="#btnLoginClicked" prefHeight="45.0" prefWidth="166.0" styleClass="btn-login" stylesheets="@admindesign.css" text="Login" />
+            <Button layoutX="539.0" layoutY="329.0" mnemonicParsing="false" onAction="#btnClearClicked" prefHeight="17.0" prefWidth="114.0" styleClass="btn-clear" stylesheets="@admindesign.css" text="Clear" />
+            <Label layoutX="631.0" layoutY="105.0" text="Sign In Account" textFill="RED">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="cancel" layoutX="732.0" layoutY="329.0" mnemonicParsing="false" onAction="#btnCancelClicked" prefHeight="25.0" prefWidth="114.0" styleClass="btn-clear" stylesheets="@admindesign.css" text="Cancel" />
+            <FontAwesomeIcon fx:id="Eyeopen" glyphName="EYE" layoutX="768.0" layoutY="242.0" onMouseClicked="#setHidepassword" />
+            <PasswordField fx:id="tfLastname" layoutX="539.0" layoutY="227.0" prefHeight="25.0" prefWidth="250.0" promptText="Password" />
+            <Button fx:id="createAccount" layoutX="608.0" layoutY="502.0" mnemonicParsing="false" onAction="#btncreateAccount" prefHeight="35.0" prefWidth="166.0" styleClass="btn-create" stylesheets="@admindesign.css" text="Create an Account" />
+            <Label layoutX="605.0" layoutY="462.0" text="Don't have an account? Sign up" textFill="RED" />
+            <ChoiceBox fx:id="checkbox" accessibleText="Select Role" layoutX="539.0" layoutY="275.0" prefWidth="150.0" />
+            <FontAwesomeIcon fill="#bc0000" glyphName="USER" layoutX="657.0" layoutY="86.0" size="7em" />
+            <AnchorPane prefHeight="576.0" prefWidth="450.0">
+               <children>
+                  <ImageView fitHeight="576.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/Welcome%20to%20VapeScape%20Your%20Ultimate%20Destination%20for%20Premium%20Vaping%20Products%20and%20(2).jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <Line endX="-100.0" endY="468.0" layoutX="550.0" layoutY="107.0" startX="-100.0" startY="-107.0" stroke="RED" />
+            <FontAwesomeIcon fx:id="Eyeclose" glyphName="EYE_SLASH" layoutX="768.0" layoutY="243.0" onMouseClicked="#btnshowpassword" />
+            <TextField fx:id="txtpass2" layoutX="539.0" layoutY="226.0" prefHeight="25.0" prefWidth="250.0" />
+            <Label fx:id="label1" layoutX="539.0" layoutY="252.0" prefHeight="17.0" prefWidth="250.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

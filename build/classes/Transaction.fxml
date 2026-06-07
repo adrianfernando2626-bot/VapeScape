@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane pannable="true" prefHeight="1350.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TransactionController">
+   <content>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1350.0" prefWidth="1280.0">
+         <top>
+            <Pane prefHeight="42.0" prefWidth="801.0" style="-fx-background-color: black;" stylesheets="@transactions.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="61.0" layoutY="5.0" text="Vape Cab" textFill="#f2f2f2">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIcon fill="WHITE" glyphName="ARROW_LEFT" layoutX="14.0" layoutY="29.0" onMouseClicked="#exitToHome" size="2em" />
+               </children>
+            </Pane>
+         </top>
+         <left>
+            <Pane prefHeight="200.0" prefWidth="450.0" style="-fx-background-color: #242424;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="myLabel" layoutX="48.0" layoutY="28.0" text="Delivery" textFill="#f2f2f2">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtfname" layoutX="43.0" layoutY="80.0" prefHeight="19.0" prefWidth="177.0" promptText="First Name" style="-fx-background-color: white;" />
+                  <TextField fx:id="txtaddress" layoutX="43.0" layoutY="121.0" prefHeight="66.0" prefWidth="365.0" promptText="Address" style="-fx-background-color: white;" />
+                  <TextField fx:id="txtlname" layoutX="234.0" layoutY="80.0" prefHeight="26.0" prefWidth="174.0" promptText="Last Name" style="-fx-background-color: white;" />
+                  <TextField fx:id="txtphone" layoutX="43.0" layoutY="203.0" prefHeight="26.0" prefWidth="365.0" promptText="Phone" style="-fx-background-color: white;" />
+                  <VBox fx:id="paymentMethodContainer" layoutX="37.0" layoutY="363.0" prefHeight="137.0" prefWidth="366.0" spacing="1.0" style="-fx-background-color: #343434;" styleClass="vbox-radius-box" stylesheets="@transactions.css">
+                     <children>
+                        <RadioButton fx:id="codradbtn" mnemonicParsing="false" text="Cash on Delivery (COD)" textFill="#fffbfb">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="paymentToggleGroup" />
+                           </toggleGroup></RadioButton>
+                        <RadioButton fx:id="gcashradbtn" mnemonicParsing="false" text="GCASH" textFill="WHITE" toggleGroup="$paymentToggleGroup" />
+                     </children>
+                     <padding>
+                        <Insets left="10.0" top="5.0" />
+                     </padding>
+                  </VBox>
+                  <Button fx:id="btnpaynow" layoutX="143.0" layoutY="526.0" mnemonicParsing="false" onAction="#Btnbarcode" prefHeight="43.0" prefWidth="154.0" style="-fx-background-color: red;" text="Pay Now" textFill="WHITE" />
+                  <Label layoutX="43.0" layoutY="326.0" text="Payment Method" textFill="#f2f2f2">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </left>
+         <center>
+            <Pane prefHeight="579.0" prefWidth="450.0" style="-fx-background-color: #323232;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="332.0" layoutY="1176.0" text="Subtotal" textFill="#f8f8f8">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="332.0" layoutY="1200.0" text="Shipping" textFill="#f8f8f8">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="332.0" layoutY="1226.0" text="Total" textFill="#f8f8f8">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbltotal" layoutX="621.0" layoutY="1222.0" text="P1,400.00" textFill="#f8f8f8">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbladdress" layoutX="574.0" layoutY="1200.0" text="Enter Shipping Address" textFill="#f7f7f7cb">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblsubtotal" layoutX="657.0" layoutY="1176.0" text="P1,400.00" textFill="#f8f8f8">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Pane fx:id="itempane1" layoutX="32.0" layoutY="22.0" prefHeight="130.0" prefWidth="752.0">
+                     <children>
+                        <Label layoutX="422.0" layoutY="74.0" text="Price:" textFill="WHITE" />
+                        <Label fx:id="transacprice1" layoutX="624.0" layoutY="74.0" textFill="WHITE" />
+                        <Label layoutX="422.0" layoutY="26.0" text="Name:" textFill="WHITE" />
+                        <ImageView fx:id="addImage1" fitHeight="125.0" fitWidth="125.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="transacname1" layoutX="526.0" layoutY="26.0" textFill="WHITE" />
+                        <Label layoutX="422.0" layoutY="99.0" text="Quantity:" textFill="WHITE" />
+                        <Label fx:id="transacquantity1" layoutX="668.0" layoutY="99.0" textFill="WHITE" />
+                        <CheckBox fx:id="checkbox1" layoutX="730.0" layoutY="108.0" mnemonicParsing="false" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="itempane2" layoutX="32.0" layoutY="172.0" prefHeight="130.0" prefWidth="752.0">
+                     <children>
+                        <Label layoutX="422.0" layoutY="74.0" text="Price:" textFill="WHITE" />
+                        <Label fx:id="transacprice2" layoutX="624.0" layoutY="74.0" textFill="WHITE" />
+                        <Label layoutX="422.0" layoutY="26.0" text="Name:" textFill="WHITE" />
+                        <ImageView fx:id="addImage2" fitHeight="125.0" fitWidth="125.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="transacname2" layoutX="526.0" layoutY="26.0" textFill="WHITE" />
+                        <Label layoutX="422.0" layoutY="99.0" text="Quantity:" textFill="WHITE" />
+                        <Label fx:id="transacquantity2" layoutX="668.0" layoutY="99.0" textFill="WHITE" />
+                        <CheckBox fx:id="checkbox2" layoutX="730.0" layoutY="105.0" mnemonicParsing="false" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="itempane3" layoutX="32.0" layoutY="317.0" prefHeight="130.0" prefWidth="752.0">
+                     <children>
+                        <Label layoutX="422.0" layoutY="74.0" text="Price:" textFill="WHITE" />
+                        <Label fx:id="transacprice3" layoutX="624.0" layoutY="74.0" textFill="WHITE" />
+                        <Label layoutX="422.0" layoutY="26.0" text="Name:" textFill="WHITE" />
+                        <ImageView fx:id="addImage3" fitHeight="125.0" fitWidth="125.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="transacname3" layoutX="526.0" layoutY="26.0" textFill="WHITE" />
+                        <Label layoutX="422.0" layoutY="99.0" text="Quantity:" textFill="WHITE" />
+                        <Label fx:id="transacquantity3" layoutX="668.0" layoutY="99.0" textFill="WHITE" />
+                        <CheckBox fx:id="checkbox3" layoutX="730.0" layoutY="99.0" mnemonicParsing="false" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="itempane5" layoutX="32.0" layoutY="596.0" prefHeight="130.0" prefWidth="752.0">
+                     <children>
+                        <Label layoutX="422.0" layoutY="74.0" text="Price:" textFill="WHITE" />
+                        <Label fx:id="transacprice5" layoutX="624.0" layoutY="74.0" textFill="WHITE" />
+                        <Label layoutX="422.0" layoutY="26.0" text="Name:" textFill="WHITE" />
+                        <ImageView fx:id="addImage5" fitHeight="125.0" fitWidth="125.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="transacname5" layoutX="526.0" layoutY="26.0" textFill="WHITE" />
+                        <Label layoutX="422.0" layoutY="99.0" text="Quantity:" textFill="WHITE" />
+                        <Label fx:id="transacquantity5" layoutX="668.0" layoutY="99.0" textFill="WHITE" />
+                        <CheckBox fx:id="checkbox5" layoutX="730.0" layoutY="99.0" mnemonicParsing="false" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="itempane4" layoutX="32.0" layoutY="446.0" prefHeight="130.0" prefWidth="752.0">
+                     <children>
+                        <Label layoutX="422.0" layoutY="74.0" text="Price:" textFill="WHITE" />
+                        <Label fx:id="transacprice4" layoutX="624.0" layoutY="74.0" textFill="WHITE" />
+                        <Label layoutX="422.0" layoutY="26.0" text="Name:" textFill="WHITE" />
+                        <ImageView fx:id="addImage4" fitHeight="125.0" fitWidth="125.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="transacname4" layoutX="526.0" layoutY="26.0" textFill="WHITE" />
+                        <Label layoutX="422.0" layoutY="99.0" text="Quantity:" textFill="WHITE" />
+                        <Label fx:id="transacquantity4" layoutX="668.0" layoutY="99.0" textFill="WHITE" />
+                        <CheckBox fx:id="checkbox4" layoutX="732.0" layoutY="101.0" mnemonicParsing="false" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="itempane6" layoutX="39.0" layoutY="747.0" prefHeight="130.0" prefWidth="752.0">
+                     <children>
+                        <Label layoutX="422.0" layoutY="74.0" text="Price:" textFill="WHITE" />
+                        <Label fx:id="transacprice6" layoutX="624.0" layoutY="74.0" textFill="WHITE" />
+                        <Label layoutX="422.0" layoutY="26.0" text="Name:" textFill="WHITE" />
+                        <ImageView fx:id="addImage6" fitHeight="125.0" fitWidth="125.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="transacname6" layoutX="526.0" layoutY="26.0" textFill="WHITE" />
+                        <Label layoutX="422.0" layoutY="99.0" text="Quantity:" textFill="WHITE" />
+                        <Label fx:id="transacquantity6" layoutX="668.0" layoutY="99.0" textFill="WHITE" />
+                        <CheckBox fx:id="checkbox6" layoutX="730.0" layoutY="100.0" mnemonicParsing="false" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="itempane7" layoutX="39.0" layoutY="883.0" prefHeight="130.0" prefWidth="752.0">
+                     <children>
+                        <Label layoutX="422.0" layoutY="74.0" text="Price:" textFill="WHITE" />
+                        <Label fx:id="transacprice7" layoutX="624.0" layoutY="74.0" textFill="WHITE" />
+                        <Label layoutX="422.0" layoutY="26.0" text="Name:" textFill="WHITE" />
+                        <ImageView fx:id="addImage7" fitHeight="125.0" fitWidth="125.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="transacname7" layoutX="526.0" layoutY="26.0" textFill="WHITE" />
+                        <Label layoutX="422.0" layoutY="99.0" text="Quantity:" textFill="WHITE" />
+                        <Label fx:id="transacquantity7" layoutX="668.0" layoutY="99.0" textFill="WHITE" />
+                        <CheckBox fx:id="checkbox7" layoutX="729.0" layoutY="96.0" mnemonicParsing="false" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="itempane8" layoutX="39.0" layoutY="1020.0" prefHeight="130.0" prefWidth="752.0">
+                     <children>
+                        <Label layoutX="422.0" layoutY="74.0" text="Price:" textFill="WHITE" />
+                        <Label fx:id="transacprice8" layoutX="624.0" layoutY="74.0" textFill="WHITE" />
+                        <Label layoutX="422.0" layoutY="26.0" text="Name:" textFill="WHITE" />
+                        <ImageView fx:id="addImage8" fitHeight="125.0" fitWidth="125.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="transacname8" layoutX="526.0" layoutY="26.0" textFill="WHITE" />
+                        <Label layoutX="422.0" layoutY="99.0" text="Quantity:" textFill="WHITE" />
+                        <Label fx:id="transacquantity8" layoutX="668.0" layoutY="99.0" textFill="WHITE" />
+                        <CheckBox fx:id="checkbox8" layoutX="728.0" layoutY="102.0" mnemonicParsing="false" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </content>
+</ScrollPane>

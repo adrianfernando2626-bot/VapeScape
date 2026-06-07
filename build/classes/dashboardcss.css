@@ -1,0 +1,90 @@
+.inner_pane{
+    -fx-background-color:#5e2b3c;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-border-color: #748CF1;
+}
+.root{
+    -fx-background-color:#EAEEF4;
+}
+.pane_1{
+    -fx-background-color:#8982C8;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-border-style: solid;
+    -fx-border-color:#c4c0c0;
+}
+.pane_2{
+    -fx-background-color:#d57f25;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-border-style: solid;
+    -fx-border-color:#c4c0c0;
+}
+.pane_3{
+    -fx-background-color:#FF6600;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-border-style: solid;
+    -fx-border-color:#c4c0c0;
+}
+.pane_4{
+    -fx-background-color:#edccaa;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-border-style: solid;
+    -fx-border-color:#c4c0c0;
+}
+.pane_5{
+    -fx-background-color:#006644;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-border-style: solid;
+    -fx-border-color:#c4c0c0;
+}
+.pane_6{
+    -fx-background-color:#8982C8;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-border-style: solid;
+    -fx-border-color:#c4c0c0;
+}
+.pane_7{
+    -fx-background-color:#707B90;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-border-style: solid;
+    -fx-border-color:#c4c0c0;
+}
+.pane_8{
+    -fx-background-color:#272b33;
+    -fx-border-width: 1px 1px 1px 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-border-style: solid;
+    -fx-border-color:#c4c0c0;
+}
+.side_pane{
+    -fx-background-color:linear-gradient(to bottom, #8d8ba6, #373740);
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid; 
+}
+.card_nav{
+    -fx-background-color:linear-gradient(to bottom, #5e2b3c, #940837);
+    -fx-background-radius:5px
+}
+.card_nav{
+    -fx-background-color:linear-gradient(to bottom, #5e2b3c, #940837);
+    -fx-background-radius:5px
+}

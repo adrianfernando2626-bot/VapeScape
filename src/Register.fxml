@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1280.0" styleClass="big-bg" stylesheets="@admindesign.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RegisterController">
+   <children>
+      <AnchorPane layoutX="190.0" layoutY="43.0" prefHeight="575.0" prefWidth="900.0" styleClass="white-bg" stylesheets="@admindesign.css">
+         <children>
+            <Label layoutX="407.0" layoutY="118.0" text="SIGN UP ACCOUNT" />
+            <Label layoutX="202.0" layoutY="135.0" text="Username" />
+            <TextField fx:id="jusername" layoutX="202.0" layoutY="152.0" prefHeight="25.0" prefWidth="501.0" promptText="Username" stylesheets="@admindesign.css" />
+            <Label layoutX="201.0" layoutY="185.0" text="Last Name" />
+            <Label layoutX="453.0" layoutY="185.0" text="First Name" />
+            <TextField fx:id="jlname" layoutX="202.0" layoutY="206.0" prefHeight="25.0" prefWidth="227.0" promptText="Last Name" />
+            <TextField fx:id="jfname" layoutX="453.0" layoutY="206.0" prefHeight="25.0" prefWidth="250.0" promptText="First Name" />
+            <Label layoutX="201.0" layoutY="238.0" text="Midde Name" />
+            <TextField fx:id="jmname" layoutX="202.0" layoutY="255.0" prefHeight="25.0" prefWidth="227.0" promptText="Middle Name" />
+            <Label layoutX="453.0" layoutY="238.0" text="Phone" />
+            <TextField fx:id="jphone" layoutX="453.0" layoutY="255.0" prefHeight="25.0" prefWidth="250.0" promptText="Phone" />
+            <Label layoutX="197.0" layoutY="298.0" text="Age" />
+            <TextField fx:id="jbirth" layoutX="305.0" layoutY="294.0" prefHeight="25.0" prefWidth="399.0" promptText="Age" />
+            <Label layoutX="197.0" layoutY="330.0" text="Select your Role" />
+            <ChoiceBox fx:id="jua" layoutX="304.0" layoutY="326.0" prefWidth="150.0" />
+            <Label layoutX="197.0" layoutY="358.0" text="Email" />
+            <Label layoutX="198.0" layoutY="384.0" text="Password" />
+            <Label layoutX="197.0" layoutY="412.0" text="Confirm Password" />
+            <TextField fx:id="jeadd" layoutX="305.0" layoutY="354.0" prefHeight="25.0" prefWidth="399.0" promptText="Email" />
+            <PasswordField fx:id="jpass" layoutX="305.0" layoutY="380.0" prefHeight="25.0" prefWidth="399.0" promptText="Password" />
+            <PasswordField fx:id="jcpass" layoutX="305.0" layoutY="408.0" prefHeight="25.0" prefWidth="399.0" promptText="Confirm Password" />
+            <Label layoutX="400.0" layoutY="450.0" onMouseClicked="#btngototermsandcondition" text="Terms and Condition" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="chkterms" layoutX="334.0" layoutY="467.0" mnemonicParsing="false" text="I have agreed to the terms and condition" />
+            <Button fx:id="btnRegister" layoutX="378.0" layoutY="509.0" mnemonicParsing="false" onAction="#btnRegisterClicked" prefHeight="25.0" prefWidth="150.0" styleClass="btn-login" stylesheets="@admindesign.css" text="Register" />
+            <Label layoutX="385.0" layoutY="544.0" onMousePressed="#btnClickedmouse" styleClass="btn-login" stylesheets="@admindesign.css" text="I already have an account" />
+            <Label layoutX="457.0" layoutY="330.0" text="Address:" />
+            <TextField fx:id="txtAddress" layoutX="504.0" layoutY="326.0" prefHeight="25.0" prefWidth="200.0" promptText="Address" />
+            <FontAwesomeIcon fill="#bc0000" glyphName="USER_PLUS" layoutX="432.0" layoutY="86.0" size="7em" />
+            <FontAwesomeIcon fx:id="Eyeclose" glyphName="EYE_SLASH" layoutX="681.0" layoutY="397.0" onMouseClicked="#btnopenpass" />
+            <TextField fx:id="txtpass1" layoutX="305.0" layoutY="380.0" prefHeight="25.0" prefWidth="399.0" promptText="Password" />
+            <FontAwesomeIcon fx:id="Eyeopen" glyphName="EYE" layoutX="681.0" layoutY="396.0" onMouseClicked="#btnclosepass" />
+            <TextField fx:id="txtpass11" layoutX="305.0" layoutY="408.0" prefHeight="25.0" prefWidth="399.0" promptText="Confirm Password" />
+            <FontAwesomeIcon fx:id="eyeclose2" glyphName="EYE_SLASH" layoutX="681.0" layoutY="425.0" onMouseClicked="#btnshowpass1" />
+            <FontAwesomeIcon fx:id="eyeclose1" glyphName="EYE" layoutX="681.0" layoutY="425.0" onMouseClicked="#btncloseeye" />
+            <ScrollPane fx:id="terms" layoutX="3.0" layoutY="3.0" prefHeight="575.0" prefWidth="900.0">
+               <content>
+                  <Pane prefHeight="800.0" prefWidth="899.0">
+                     <children>
+                        <CheckBox layoutX="601.0" layoutY="765.0" mnemonicParsing="false" onAction="#backtoregister" text="I have read the Terms and Condition" />
+                        <Button fx:id="btn" layoutX="825.0" layoutY="761.0" mnemonicParsing="false" onAction="#backto" text="Proceed" />
+                        <Label prefHeight="731.0" prefWidth="900.0" text="Welcome to VapeScape! These terms and conditions outline the rules and regulations for the use of our website and services.&#10;&#10;By accessing this website and making a purchase, we assume you accept these terms and conditions. &#10;&#10;Do not continue to use VapeScape if you do not agree to all the terms and conditions stated on this page.&#10;&#10;The following terminology applies to these Terms and Conditions:&#10;&#10;&quot;Customer&quot;, &quot;You&quot;, and &quot;Your&quot; refers to you, the person accessing this website and accepting the Company’s terms and conditions.&#10;&quot;The Company&quot;, &quot;Ourselves&quot;, &quot;We&quot;, &quot;Our&quot;, and &quot;Us&quot;, refers to our VapeScape.&#10;&quot;Party&quot;, &quot;Parties&quot;, or &quot;Us&quot;, refers to both the Customer and ourselves.&#10;&quot;Product(s)&quot; refers to the items available for purchase on our website.&#10;&quot;Services&quot; refers to any services offered by VapeScape, including but not limited to the sale and delivery of products.&#10;Ordering:&#10;&#10;All orders are subject to availability and confirmation of the order price.&#10;We reserve the right to refuse any order you place with us.&#10;You agree to provide current, complete, and accurate purchase and account information for all purchases made at our store.&#10;Shipping:&#10;&#10;We aim to dispatch orders within [insert timeframe] of receiving payment.&#10;Shipping times may vary based on your location and shipping method chosen during checkout.&#10;We are not responsible for any customs and taxes applied to your order.&#10;Returns and Refunds:&#10;&#10;We accept returns within [insert timeframe] days of delivery.&#10;Returned items must be unused and in the same condition as received, with original packaging.&#10;Refunds will be issued upon receipt and inspection of returned items.&#10;Age Restriction:&#10;&#10;By purchasing products from VapeScape, you confirm that you are of legal age to purchase vaping products in your jurisdiction.&#10;We reserve the right to refuse service, terminate accounts, remove or edit content, or cancel orders in our sole discretion.&#10;Privacy Policy:&#10;&#10;Your privacy is important to us. Please refer to our Privacy Policy to understand how we collect, use, and disclose information.&#10;Changes to Terms and Conditions:&#10;&#10;We reserve the right to modify these terms and conditions at any time. Changes will be effective immediately upon posting on this page.&#10;Your continued use of the website after changes are posted constitutes your acknowledgment of the modifications and your consent to abide by and be bound by the modified terms and conditions.&#10;Contact Information:&#10;&#10;If you have any questions or concerns about these terms and conditions, please contact us at [insert contact information].&#10;" />
+                     </children>
+                  </Pane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

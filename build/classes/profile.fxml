@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProfileController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutX="14.0" prefHeight="301.0" prefWidth="1366.0" styleClass="nav-profileTop" stylesheets="@admindesign.css">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="45.0" layoutX="937.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true" />
+                  <FontAwesomeIcon glyphName="USER" layoutX="950.0" layoutY="99.0" size="2EM" />
+                  <Label fx:id="lblname" layoutX="982.0" layoutY="82.0" text="name of customer/admin" />
+                  <Label layoutX="215.0" layoutY="81.0" text="Account Settings">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIcon glyphName="HOME" layoutX="148.0" layoutY="110.0" onMouseClicked="#gotohome" size="6EM" text="" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="300.0" prefHeight="435.0" prefWidth="1366.0" styleClass="nav-profileBottom" stylesheets="@admindesign.css">
+               <children>
+                  <AnchorPane layoutX="233.0" layoutY="-184.0" prefHeight="550.0" prefWidth="900.0" stylesheets="@admindesign.css">
+                     <styleClass>
+                        <String fx:value="white-bg" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <children>
+                        <Label layoutX="112.0" layoutY="68.0" text="Username" />
+                        <TextField fx:id="txtusername" layoutX="112.0" layoutY="101.0" prefHeight="40.0" prefWidth="350.0" styleClass="textfield-profile" stylesheets="@admindesign.css" />
+                        <Label layoutX="112.0" layoutY="164.0" text="Password" />
+                        <PasswordField fx:id="txtpassword" layoutX="112.0" layoutY="196.0" prefHeight="40.0" prefWidth="350.0" styleClass="textfield-profile" stylesheets="@admindesign.css" />
+                        <TextField fx:id="txtcontacts" layoutX="112.0" layoutY="282.0" prefHeight="40.0" prefWidth="350.0" styleClass="textfield-profile" stylesheets="@admindesign.css" />
+                        <Label layoutX="112.0" layoutY="258.0" text="Contact Number" />
+                        <Hyperlink layoutX="105.0" layoutY="496.0" onMouseClicked="#deleteaccount" text="Delete Your Account">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Hyperlink>
+                        <TextField fx:id="txtemail" layoutX="112.0" layoutY="373.0" prefHeight="40.0" prefWidth="350.0" styleClass="textfield-profile" stylesheets="@admindesign.css" />
+                        <Label layoutX="112.0" layoutY="350.0" text="Email Address" />
+                        <ImageView fitHeight="150.0" fitWidth="175.0" layoutX="644.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button layoutX="611.0" layoutY="489.0" mnemonicParsing="false" onAction="#gotoHome" prefHeight="40.0" prefWidth="120.0" styleClass="btn-cancel" stylesheets="@admindesign.css" text="Cancel" textFill="WHITE" />
+                        <Button layoutX="751.0" layoutY="489.0" mnemonicParsing="false" onAction="#updatedetails" prefHeight="40.0" prefWidth="120.0" styleClass="btn-profile" stylesheets="@admindesign.css" text="Save" textFill="WHITE" />
+                        <Button fx:id="addimage" layoutX="688.0" layoutY="176.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" styleClass="btn-cancel" stylesheets="@admindesign.css" text="Browse" textFill="#fffafa" />
+                        <Button layoutX="469.0" layoutY="489.0" mnemonicParsing="false" onAction="#logout" prefHeight="40.0" prefWidth="120.0" styleClass="btn-profile" stylesheets="@admindesign.css" text="Logout" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

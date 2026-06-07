@@ -1,0 +1,250 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 13, 2024, 3:26:48 PM
+    Author     : admin
+*/
+
+.top-form{
+    -fx-background-color: #fff;
+    -fx-background-color: #000;
+    -fx-border-width: .4px .4px .2px .4px;
+}
+
+.semi-top-form{
+    -fx-background-color: #fff;
+    -fx-background-color: #000;
+    -fx-border-width: .4px .4px .8px .4px;
+}
+
+.close{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+
+.close:hover{
+    -fx-background-color:#9e2e2e;
+}
+
+.minimize{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+
+.minimize:hover{
+    -fx-background-color:#ddd;
+}
+
+.nav-form{
+    -fx-background-color:linear-gradient(to bottom right, #b96667, #971a1a);
+}
+
+.nav-btn{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+    -fx-font-family:"Roboto";
+    -fx-font-size:14px;
+    -fx-text-fill:#fff;
+    -fx-alignment:CENTER_LEFT;
+}
+
+.nav-btn:hover{
+    -fx-background-color:#B17A82;
+}
+
+.logout{
+    -fx-background-color:#ff0000;
+    -fx-background-raidus:10px;
+    -fx-cursor:hand;
+}
+
+.logout:hover{
+    -fx-background-color: #800101;
+}
+
+.shadow{
+    -fx-effect:dropshadow(three-pass-box, rgba(0,0,0,0.5), 6,0,0,0);
+}
+
+.white-bg{
+    -fx-background-color:fff;
+    -fx-background-radius:8px;
+}
+
+.card{
+    -fx-background-color:linear-gradient(to right, #5e2b3c, #940837);
+    -fx-background-radius:5px;
+}
+
+.big-bg{
+    -fx-background-color:linear-gradient(to top, #8E0010, #590002);
+}
+
+.btn-login{
+    -fx-background-color:#ececec;
+}
+
+.btn-login:hover{
+    -fx-background-color:#E80230;
+    -fx-cursor:hand;
+}
+
+.btn-create{
+    -fx-background-color:#ececec;
+}
+
+.btn-clear{
+    -fx-background-color:#ececec;
+    -fx-cursor:hand;
+}
+
+.btn-clear:hover{
+    -fx-background-color:#d4d4d4;
+}
+
+.btn-create:hover{
+    -fx-background-color: #E80230;
+    -fx-cursor:hand;
+}
+
+.register:hover{
+    -fx-background-color: #b96667;
+}
+
+.nav-customer{
+    -fx-background-color:#ececec;
+}
+
+.nav-dashboard{
+    -fx-background-color:transparent;
+    -fx-background-radius:8px;
+    -fx-cursor:hand;
+}
+
+.nav-dashboard:hover{
+    -fx-background-color: #971a1a;
+}
+
+.slider{
+    -fx-background-color:#c6c6c6;
+    -fx-background-radius:10px;
+    -fx-cursor:hand;
+}
+
+.slider:hover{
+    -fx-background-color:#799496;
+    -fx-cursor:hand;
+}
+
+.slider-bg{
+    -fx-background-color:linear-gradient(to top ,#606F75,#5C6D75,#4E5D64,#44555A,#414F56,#435057,#424F55);
+}
+
+.slider2-bg{
+    -fx-background-color: linear-gradient(to bottom, #030001, #040000, #070203, #3E2090, #170106,#1E0204);
+}
+
+.card-dashboard1{
+    -fx-background-color: linear-gradient(to bottom, #EBB1B3,#E3C2C3);
+    -fx-background-radius: 20px;
+}
+
+.card-dashboard1-button{
+    -fx-background-color:#EBC1C3;
+    -fx-background-radius: 15px;
+    -fx-cursor:hand;
+}
+
+.card-dashboard1-button:hover{
+    -fx-background-color:#EB5463;
+}
+
+.card-dashboard2{
+    -fx-background-color: linear-gradient(to bottom, #ECC76B, #EC9606);
+    -fx-background-radius: 20px;
+}
+
+.card-dashboard2-button{
+    -fx-background-color:#E8B00D;
+    -fx-background-radius: 15px;
+    -fx-cursor:hand;
+}
+
+.card-dashboard2-button:hover{
+    -fx-background-color:#E05204;
+}
+
+.card-dashboard3{
+    -fx-background-color: linear-gradient(to bottom, #3E1E29, #E6485B);
+    -fx-background-radius: 20px;
+}
+
+.card-dashboard3-button{
+    -fx-background-color:#FF6376;
+    -fx-background-radius: 15px;
+    -fx-cursor:hand;    
+}
+
+.card-dashboard3-button:hover{
+    -fx-background-color:#E95255;
+}
+
+.card-dashboard4{
+    -fx-background-color: linear-gradient(to bottom, #033888, #0D1C45);
+    -fx-background-radius: 20px;
+}
+
+.card-dashboard4-button{
+    -fx-background-color:#6DC6FE;
+    -fx-background-radius: 15px;
+    -fx-cursor:hand;    
+}
+
+.card-dashboard4-button:hover{
+    -fx-background-color:#2758D7;
+}
+
+.nav-profileBottom{
+    -fx-background-color:#FAF9F6;
+}
+
+.nav-profileTop{
+     -fx-background-color: #808080;
+}
+
+.btn-profile{
+    -fx-background-color:#d33636;
+    -fx-cursor:hand;
+    -fx-font-size: 14px;
+    -fx-font-family:Arial;
+    -fx-background-radius: 5px;
+}
+
+.btn-cancel{
+    -fx-background-color: #b4b4b4;
+    -fx-cursor:hand;
+    -fx-font-size: 14px;
+    -fx-font-family:Arial;
+    -fx-background-radius: 8px;
+}
+
+.btn-cancel:hover{
+    -fx-background-color:#44555A;
+}
+
+.btn-profile:hover{
+    -fx-background-color:#800101;
+}
+
+.textfield-profile{
+    -fx-background-color:#fff;
+    -fx-border-color:#000;
+    -fx-border-width: .5px;
+}
+
+.btn-homepageNav{
+    -fx-background-color:transparent;
+}
+

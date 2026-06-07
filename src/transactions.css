@@ -1,0 +1,14 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.vbox-radius-box {
+    -fx-background-radius: 20 20 20 20;
+}
+.txtfield-radius-layout {
+    -fx-background-radius: 6 6 6 6;
+    
+}

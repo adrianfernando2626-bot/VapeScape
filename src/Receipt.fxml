@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="660.0" prefWidth="1280.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21">
+   <children>
+      <Pane layoutX="438.0" layoutY="3.0" prefHeight="660.0" prefWidth="403.0">
+         <children>
+            <Label layoutX="16.0" layoutY="46.0" text="Name: ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblname" layoutX="90.0" layoutY="46.0" prefHeight="17.0" prefWidth="297.0" />
+            <Label layoutX="14.0" layoutY="80.0" text="Address:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="114.0" text="Username:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="146.0" text="Phone:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbladdress" layoutX="90.0" layoutY="80.0" prefHeight="17.0" prefWidth="297.0" />
+            <Label fx:id="lblusername" layoutX="90.0" layoutY="114.0" prefHeight="17.0" prefWidth="297.0" />
+            <Label fx:id="lblphone" layoutX="92.0" layoutY="146.0" prefHeight="17.0" prefWidth="297.0" />
+            <ImageView fitHeight="54.0" fitWidth="383.0" layoutX="10.0" layoutY="575.0" pickOnBounds="true" preserveRatio="true" />
+            <Pane layoutX="8.0" layoutY="259.0" prefHeight="33.0" prefWidth="383.0">
+               <children>
+                  <Label fx:id="lblname" layoutX="6.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblqty" layoutX="108.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0" />
+                  <Label fx:id="lblprice" layoutX="203.0" layoutY="8.0" prefHeight="17.0" prefWidth="84.0" />
+                  <Label fx:id="lbltotal" layoutX="299.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0" />
+               </children>
+            </Pane>
+            <Label layoutX="13.0" layoutY="231.0" text="Name:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="138.0" layoutY="231.0" text="Qty">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="245.0" layoutY="231.0" text="Price">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="347.0" layoutY="231.0" text="Total">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Pane layoutX="13.0" layoutY="292.0" prefHeight="33.0" prefWidth="383.0">
+               <children>
+                  <Label fx:id="lblname2" layoutX="6.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblqty2" layoutX="108.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0" />
+                  <Label fx:id="lblprice2" layoutX="203.0" layoutY="8.0" prefHeight="17.0" prefWidth="84.0" />
+                  <Label fx:id="lbltotal2" layoutX="299.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="13.0" layoutY="325.0" prefHeight="33.0" prefWidth="383.0">
+               <children>
+                  <Label fx:id="lblname3" layoutX="6.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblqty3" layoutX="108.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0" />
+                  <Label fx:id="lblprice3" layoutX="203.0" layoutY="8.0" prefHeight="17.0" prefWidth="84.0" />
+                  <Label fx:id="lbltotal3" layoutX="299.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="13.0" layoutY="367.0" prefHeight="33.0" prefWidth="383.0">
+               <children>
+                  <Label fx:id="lblname4" layoutX="6.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblqty4" layoutX="108.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0" />
+                  <Label fx:id="lblprice4" layoutX="203.0" layoutY="8.0" prefHeight="17.0" prefWidth="84.0" />
+                  <Label fx:id="lbltotal4" layoutX="299.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="8.0" layoutY="400.0" prefHeight="33.0" prefWidth="383.0">
+               <children>
+                  <Label fx:id="lblname5" layoutX="6.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblqty5" layoutX="108.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0" />
+                  <Label fx:id="lblprice5" layoutX="203.0" layoutY="8.0" prefHeight="17.0" prefWidth="84.0" />
+                  <Label fx:id="lbltotal5" layoutX="299.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="13.0" layoutY="443.0" prefHeight="33.0" prefWidth="383.0">
+               <children>
+                  <Label fx:id="lblname6" layoutX="6.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblqty6" layoutX="108.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0" />
+                  <Label fx:id="lblprice6" layoutX="203.0" layoutY="8.0" prefHeight="17.0" prefWidth="84.0" />
+                  <Label fx:id="lbltotal6" layoutX="299.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="13.0" layoutY="476.0" prefHeight="33.0" prefWidth="383.0">
+               <children>
+                  <Label fx:id="lblname7" layoutX="6.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblqty7" layoutX="108.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0" />
+                  <Label fx:id="lblprice7" layoutX="203.0" layoutY="8.0" prefHeight="17.0" prefWidth="84.0" />
+                  <Label fx:id="lbltotal7" layoutX="299.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="13.0" layoutY="509.0" prefHeight="33.0" prefWidth="383.0">
+               <children>
+                  <Label fx:id="lblname8" layoutX="6.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblqty8" layoutX="108.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0" />
+                  <Label fx:id="lblprice8" layoutX="203.0" layoutY="8.0" prefHeight="17.0" prefWidth="84.0" />
+                  <Label fx:id="lbltotal8" layoutX="299.0" layoutY="6.0" prefHeight="17.0" prefWidth="84.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="7.0" layoutY="542.0" prefHeight="33.0" prefWidth="383.0">
+               <children>
+                  <Label layoutX="6.0" layoutY="6.0" text="Total:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbltotal" layoutX="353.0" layoutY="5.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="10.0" layoutY="169.0" text="Types of Payment:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbltypesofpayment" layoutX="124.0" layoutY="169.0" prefHeight="17.0" prefWidth="272.0" />
+            <Label layoutX="14.0" layoutY="197.0" text="Shop Location: ">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="101.0" layoutY="197.0" text="Nueva Ecija University of the Science and Technology" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

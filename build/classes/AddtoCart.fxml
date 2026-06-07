@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1467.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddtoCartController">
+   <content>
+      <AnchorPane id="AnchorPane" prefHeight="1467.0" prefWidth="1282.0">
+         <children>
+            <Pane layoutX="7.0" prefHeight="1467.0" prefWidth="1268.0" style="-fx-background-color: white;">
+               <children>
+                  <Pane fx:id="itemPane" layoutX="38.0" layoutY="128.0" prefHeight="139.0" prefWidth="792.0" style="-fx-background-color: #E8E4C9;" styleClass="txtfield-radius-layout" stylesheets="@transactions.css">
+                     <children>
+                        <Label fx:id="lblname1" layoutX="165.0" layoutY="25.0">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemRemove" layoutX="165.0" layoutY="99.0" onMouseClicked="#removeCartProduct1" text="Remove" textFill="RED">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblprice1" layoutX="711.0" layoutY="63.0" text="P500" textFill="#00000094">
+                           <font>
+                              <Font name="Arial" size="11.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="531.0" layoutY="59.0" prefHeight="25.0" prefWidth="112.0">
+                           <children>
+                              <Button fx:id="buttminus1" layoutX="11.0" layoutY="-1.0" mnemonicParsing="false" onAction="#AddclickMinus1" prefHeight="25.0" prefWidth="34.0" text="-" textFill="#f80000">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="buttplus1" layoutX="68.0" mnemonicParsing="false" onAction="#addclickbutton" prefHeight="25.0" prefWidth="34.0" text="+" textFill="#f80000">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="lblquantnum1" layoutX="53.0" layoutY="4.0" text="0" />
+                           </children>
+                        </Pane>
+                        <ImageView fx:id="addimagecart1" fitHeight="125.0" fitWidth="125.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+                        <CheckBox fx:id="checkbox1" layoutX="737.0" layoutY="106.0" mnemonicParsing="false" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="97.0" layoutY="80.0" text="SHOPPING CART">
+                     <font>
+                        <Font name="Arial Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Pane fx:id="itemPane1" layoutX="38.0" layoutY="283.0" prefHeight="139.0" prefWidth="792.0" style="-fx-background-color: #E8E4C9;" styleClass="txtfield-radius-layout" stylesheets="@transactions.css">
+                     <children>
+                        <Label fx:id="lblname2" layoutX="165.0" layoutY="25.0" text="Priscilla Vape Condominium 100ML">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemRemove1" layoutX="165.0" layoutY="99.0" onMouseClicked="#removeCartProduct2" text="Remove" textFill="RED">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblprice2" layoutX="711.0" layoutY="63.0" text="P500" textFill="#00000094">
+                           <font>
+                              <Font name="Arial" size="11.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="531.0" layoutY="58.0" prefHeight="25.0" prefWidth="112.0">
+                           <children>
+                              <Button fx:id="buttminus2" layoutX="11.0" layoutY="-1.0" mnemonicParsing="false" onAction="#AddclickMinus2" prefHeight="25.0" prefWidth="34.0" text="-" textFill="#f80000">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="buttplus2" layoutX="68.0" mnemonicParsing="false" onAction="#addclickbutton2" prefHeight="25.0" prefWidth="34.0" text="+" textFill="#f80000">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="lblquantnum2" layoutX="53.0" layoutY="4.0" text="0" />
+                           </children>
+                        </Pane>
+                        <ImageView fx:id="addimagecart2" fitHeight="125.0" fitWidth="125.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+                        <CheckBox fx:id="checkbox2" layoutX="737.0" layoutY="106.0" mnemonicParsing="false" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="itemPane11" layoutX="38.0" layoutY="442.0" prefHeight="139.0" prefWidth="792.0" style="-fx-background-color: #E8E4C9;" styleClass="txtfield-radius-layout" stylesheets="@transactions.css">
+                     <children>
+                        <Label fx:id="lblname3" layoutX="165.0" layoutY="25.0" text="Priscilla Vape Condominium 100ML">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemRemove11" layoutX="165.0" layoutY="99.0" onMouseClicked="#removeCartProduct3" text="Remove" textFill="RED">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblprice3" layoutX="711.0" layoutY="63.0" text="P500" textFill="#00000094">
+                           <font>
+                              <Font name="Arial" size="11.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="531.0" layoutY="58.0" prefHeight="25.0" prefWidth="112.0">
+                           <children>
+                              <Button fx:id="buttminus3" layoutX="11.0" layoutY="-1.0" mnemonicParsing="false" onAction="#AddclickMinus3" prefHeight="25.0" prefWidth="34.0" text="-" textFill="#f80000">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="buttplus3" layoutX="68.0" mnemonicParsing="false" onAction="#addclickbutton3" prefHeight="25.0" prefWidth="34.0" text="+" textFill="#f80000">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="lblquantnum3" layoutX="53.0" layoutY="4.0" text="0" />
+                           </children>
+                        </Pane>
+                        <ImageView fx:id="addimagecart3" fitHeight="125.0" fitWidth="125.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+                        <CheckBox fx:id="checkbox3" layoutX="737.0" layoutY="106.0" mnemonicParsing="false" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="-16.0" layoutY="-7.0" prefHeight="61.0" prefWidth="1255.0" style="-fx-background-color: #242424;">
+                     <children>
+                        <Button layoutX="27.0" layoutY="18.0" mnemonicParsing="false" onAction="#gotohome" text="Button" />
+                     </children></Pane>
+                  <Pane fx:id="itemPane111" layoutX="38.0" layoutY="600.0" prefHeight="139.0" prefWidth="792.0" style="-fx-background-color: #E8E4C9;" styleClass="txtfield-radius-layout" stylesheets="@transactions.css">
+                     <children>
+                        <Label fx:id="lblname4" layoutX="165.0" layoutY="25.0" text="Priscilla Vape Condominium 100ML">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemRemove111" layoutX="165.0" layoutY="99.0" onMouseClicked="#removeCartProduct4" text="Remove" textFill="RED">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblprice4" layoutX="711.0" layoutY="63.0" text="P500" textFill="#00000094">
+                           <font>
+                              <Font name="Arial" size="11.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="531.0" layoutY="58.0" prefHeight="25.0" prefWidth="112.0">
+                           <children>
+                              <Button fx:id="buttminus31" layoutX="11.0" layoutY="-1.0" mnemonicParsing="false" onAction="#AddclickMinus4" prefHeight="25.0" prefWidth="34.0" text="-" textFill="#f80000">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="buttplus31" layoutX="68.0" mnemonicParsing="false" onAction="#addclickbutton4" prefHeight="25.0" prefWidth="34.0" text="+" textFill="#f80000">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="lblquantnum4" layoutX="53.0" layoutY="4.0" text="0" />
+                           </children>
+                        </Pane>
+                        <ImageView fx:id="addimagecart4" fitHeight="125.0" fitWidth="125.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+                        <CheckBox fx:id="checkbox4" layoutX="737.0" layoutY="106.0" mnemonicParsing="false" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="itemPane112" layoutX="38.0" layoutY="762.0" prefHeight="139.0" prefWidth="792.0" style="-fx-background-color: #E8E4C9;" styleClass="txtfield-radius-layout" stylesheets="@transactions.css">
+                     <children>
+                        <Label fx:id="lblname5" layoutX="165.0" layoutY="25.0" text="Priscilla Vape Condominium 100ML">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemRemove112" layoutX="165.0" layoutY="99.0" onMouseClicked="#removeCartProduct5" text="Remove" textFill="RED">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblprice5" layoutX="711.0" layoutY="63.0" text="P500" textFill="#00000094">
+                           <font>
+                              <Font name="Arial" size="11.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="531.0" layoutY="58.0" prefHeight="25.0" prefWidth="112.0">
+                           <children>
+                              <Button fx:id="buttminus32" layoutX="11.0" layoutY="-1.0" mnemonicParsing="false" onAction="#AddclickMinus5" prefHeight="25.0" prefWidth="34.0" text="-" textFill="#f80000">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="buttplus32" layoutX="68.0" mnemonicParsing="false" onAction="#addclickbutton5" prefHeight="25.0" prefWidth="34.0" text="+" textFill="#f80000">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="lblquantnum5" layoutX="53.0" layoutY="4.0" text="0" />
+                           </children>
+                        </Pane>
+                        <ImageView fx:id="addimagecart5" fitHeight="125.0" fitWidth="125.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+                        <CheckBox fx:id="checkbox5" layoutX="737.0" layoutY="106.0" mnemonicParsing="false" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="itemPane1121" layoutX="38.0" layoutY="926.0" prefHeight="139.0" prefWidth="792.0" style="-fx-background-color: #E8E4C9;" styleClass="txtfield-radius-layout" stylesheets="@transactions.css">
+                     <children>
+                        <Label fx:id="lblname6" layoutX="165.0" layoutY="25.0" text="Priscilla Vape Condominium 100ML">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemRemove1121" layoutX="165.0" layoutY="99.0" onMouseClicked="#removeCartProduct6" text="Remove" textFill="RED">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblprice6" layoutX="711.0" layoutY="63.0" text="P500" textFill="#00000094">
+                           <font>
+                              <Font name="Arial" size="11.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="531.0" layoutY="58.0" prefHeight="25.0" prefWidth="112.0">
+                           <children>
+                              <Button fx:id="buttminus321" layoutX="11.0" layoutY="-1.0" mnemonicParsing="false" onAction="#AddclickMinus6" prefHeight="25.0" prefWidth="34.0" text="-" textFill="#f80000">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="buttplus321" layoutX="68.0" mnemonicParsing="false" onAction="#addclickbutton6" prefHeight="25.0" prefWidth="34.0" text="+" textFill="#f80000">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="lblquantnum6" layoutX="53.0" layoutY="4.0" text="0" />
+                           </children>
+                        </Pane>
+                        <ImageView fx:id="addimagecart6" fitHeight="125.0" fitWidth="125.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+                        <CheckBox fx:id="checkbox6" layoutX="737.0" layoutY="106.0" mnemonicParsing="false" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="itemPane11211" layoutX="38.0" layoutY="1085.0" prefHeight="139.0" prefWidth="792.0" style="-fx-background-color: #E8E4C9;" styleClass="txtfield-radius-layout" stylesheets="@transactions.css">
+                     <children>
+                        <Label fx:id="lblname7" layoutX="165.0" layoutY="25.0" text="Priscilla Vape Condominium 100ML">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemRemove11211" layoutX="165.0" layoutY="99.0" onMouseClicked="#removeCartProduct7" text="Remove" textFill="RED">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblprice7" layoutX="711.0" layoutY="63.0" text="P500" textFill="#00000094">
+                           <font>
+                              <Font name="Arial" size="11.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="531.0" layoutY="58.0" prefHeight="25.0" prefWidth="112.0">
+                           <children>
+                              <Button fx:id="buttminus3211" layoutX="11.0" layoutY="-1.0" mnemonicParsing="false" onAction="#AddclickMinus7" prefHeight="25.0" prefWidth="34.0" text="-" textFill="#f80000">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="buttplus3211" layoutX="68.0" mnemonicParsing="false" onAction="#addclickbutton7" prefHeight="25.0" prefWidth="34.0" text="+" textFill="#f80000">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="lblquantnum7" layoutX="53.0" layoutY="4.0" text="0" />
+                           </children>
+                        </Pane>
+                        <ImageView fx:id="addimagecart7" fitHeight="125.0" fitWidth="125.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true" />
+                        <CheckBox fx:id="checkbox7" layoutX="739.0" layoutY="99.0" mnemonicParsing="false" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="itemPane11212" layoutX="38.0" layoutY="1244.0" prefHeight="139.0" prefWidth="792.0" style="-fx-background-color: #E8E4C9;" styleClass="txtfield-radius-layout" stylesheets="@transactions.css">
+                     <children>
+                        <Label fx:id="lblname8" layoutX="165.0" layoutY="25.0" text="Priscilla Vape Condominium 100ML">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="itemRemove11212" layoutX="165.0" layoutY="99.0" onMouseClicked="#removeCartProduct8" text="Remove" textFill="RED">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblprice8" layoutX="711.0" layoutY="63.0" text="P500" textFill="#00000094">
+                           <font>
+                              <Font name="Arial" size="11.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="531.0" layoutY="58.0" prefHeight="25.0" prefWidth="112.0">
+                           <children>
+                              <Button fx:id="buttminus3212" layoutX="11.0" layoutY="-1.0" mnemonicParsing="false" onAction="#AddclickMinus8" prefHeight="25.0" prefWidth="34.0" text="-" textFill="#f80000">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="buttplus3212" layoutX="68.0" mnemonicParsing="false" onAction="#addclickbutton8" prefHeight="25.0" prefWidth="34.0" text="+" textFill="#f80000">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="lblquantnum8" layoutX="53.0" layoutY="4.0" text="0" />
+                           </children>
+                        </Pane>
+                        <ImageView fx:id="addimagecart8" fitHeight="125.0" fitWidth="125.0" layoutX="14.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+                        <CheckBox fx:id="checkbox8" layoutX="735.0" layoutY="106.0" mnemonicParsing="false" />
+                     </children>
+                  </Pane>
+                  <FontAwesomeIcon glyphName="SHOPPING_CART" layoutX="25.0" layoutY="114.0" size="5EM" />
+                  <Button layoutX="1054.0" layoutY="81.0" mnemonicParsing="false" onAction="#buyoutProduct" text="Button" textFill="WHITE" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
